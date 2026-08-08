@@ -1,0 +1,11 @@
+.git
+.idea
+**/*.iml
+**/agent-transcripts
+# Keep jars available for image COPY; ignore other build junk if needed
+**/target/classes
+**/target/generated-sources
+**/target/maven-archiver
+**/target/maven-status
+**/target/surefire-reports
+**/target/test-classes
