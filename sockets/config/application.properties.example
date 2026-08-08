@@ -1,0 +1,17 @@
+spring.application.name=sockets
+server.port=8081
+
+app.jwt.secret=chats-dev-secret-change-me-32chars-min
+app.jwt.expiration-ms=86400000
+
+spring.cassandra.contact-points=127.0.0.1
+spring.cassandra.port=9042
+spring.cassandra.keyspace-name=messages
+spring.cassandra.local-datacenter=datacenter1
+spring.cassandra.schema-action=CREATE_IF_NOT_EXISTS
+
+spring.data.redis.host=127.0.0.1
+spring.data.redis.port=6379
+
+app.chats.base-url=http://localhost:8080
+app.redis.user-channel-prefix=user:
