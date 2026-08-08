@@ -1,0 +1,13 @@
+spring.application.name=chats
+server.port=8080
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/chats
+spring.datasource.username=chats
+spring.datasource.password=chats
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.open-in-view=false
+spring.jpa.show-sql=true
+
+app.jwt.secret=chats-dev-secret-change-me-32chars-min
+app.jwt.expiration-ms=86400000
