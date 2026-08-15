@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.data.redis.connection.Message;
 import org.springframework.data.redis.connection.MessageListener;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
@@ -18,7 +19,7 @@ public class RedisUserMessageSubscriber implements MessageListener {
 	private final ObjectMapper objectMapper;
 	private final SimpMessagingTemplate messagingTemplate;
 
-	public RedisUserMessageSubscriber(ObjectMapper objectMapper, SimpMessagingTemplate messagingTemplate) {
+	public RedisUserMessageSubscriber(ObjectMapper objectMapper, @Lazy SimpMessagingTemplate messagingTemplate) {
 		this.objectMapper = objectMapper;
 		this.messagingTemplate = messagingTemplate;
 	}
